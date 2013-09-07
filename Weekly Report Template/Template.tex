@@ -2,10 +2,52 @@
 %|
 %| language: LaTeX
 %| Author: Ben Smith
-\documentclass[12pt,journal,final,compsoc]{IEEEtran}
+%| 
+%| This source has been tagged with the "<CHANGE" tag in areas
+%| that require updating when making a new docuent
+%|
+%| This source will generate a PDF file complete with thumbnails navigation menu and metadata.
+%| Much of the tex awesomeness comes from http://www.michaelshell.org/ praise be to him for creating the guide
+\documentclass[12pt,journal,compsoc]{IEEEtran}
 
-%| This package turns all references into clickable links
-\usepackage{hyperref}
+%| Override compsoc class' Palatino font for body text, restores to Times New Roman
+\renewcommand{\rmdefault}{ptm}\selectfont
+
+%| IEEE Citation package
+ \usepackage{cite}
+
+%| American Mathematical Society package for fancy maths	
+\usepackage[cmex10]{amsmath}
+\interdisplaylinepenalty=2500				% Restores IEEE line spacing after amsmath
+
+%| Better tables than LaTeX 2e
+\usepackage{array}
+
+%| Improved URL handling
+\usepackage{url}
+
+%| Enables PDF metadata, thumbnails, and navigation
+\newcommand\MYhyperrefoptions{
+	bookmarks=true,
+	bookmarksnumbered=true,
+	pdfpagemode={UseOutlines},
+	plainpages=false,
+	pdfpagelabels=true,
+	colorlinks=true,
+	linkcolor={black},
+	citecolor={black},
+	pagecolor={black},
+	urlcolor={black},
+	pdftitle={Bare Demo of IEEEtran.cls for Computer Society Journals},			%#CHANGE
+	pdfsubject={Typesetting},													%#CHANGE
+	pdfauthor={Michael D. Shell},												%#CHANGE
+	pdfkeywords={Computer Society, IEEEtran, journal, LaTeX, paper,template}}	%#CHANGE
+
+%| Calls hyper ref package 
+\usepackage[\MYhyperrefoptions,pdftex]{hyperref}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
 
 \begin{document}
 
@@ -163,6 +205,7 @@
 		\centering
 		\begin{tabular}{p{5.5cm}|p{1cm}|p{1cm}}
 		\hline
+
 		\bfseries 	Task		 		& \bfseries Hours Worked	& \bfseries Status	\\
 		\hline
 		\hline
