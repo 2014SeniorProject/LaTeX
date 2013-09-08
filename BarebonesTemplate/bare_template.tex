@@ -13,13 +13,13 @@
 
 %| This section will essentially create variables to be used in some
 %| of the documents formtting and the PDF's metadata 
-%|
+%|s
 %| 
-\newcommand{\TITLE}{Super Smart Title}
-\newcommand{\KEYWORDS}{keyword1, keyword2}
-\newcommand{\ABSTRACT}{we think....}
+\newcommand{\TITLE}{Assignment Title}
+\newcommand{\KEYWORDS}{keyword1, keyword2, keyword1, keyword2, keyword1, keyword2, keyword1, keyword2}
+\newcommand{\ABSTRACT}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, sapien vel gravida gravida, ligula magna ullamcorper orci, eu sodales nunc metus ac ante. Curabitur vel fermentum sem, sit amet congue velit.}
 \newcommand{\AUTHOR}{Micheal Frith, David Larribas, Devin Moore, Benjamin Smith}
-
+\newcommand{\DUEDATE}{September 10, 2013}
 %| =================================================================================================
 %| Formatting options
 %| =================================================================================================
@@ -28,7 +28,7 @@
 \renewcommand{\rmdefault}{ptm}\selectfont
 
 %| IEEE Citation package
- \usepackage{cite}
+\usepackage{cite}
 
 %| American Mathematical Society package for fancy maths	
 \usepackage[cmex10]{amsmath}
@@ -69,16 +69,6 @@
 
 %| Inserts header cover sheet 
 \include{./Title_Page}
-
-%| Automatic keyword entry above
-\begin{keywords}
-\KEYWORDS
-\end{keywords}
-
-%| Automatic keyword entry above
-\begin{abstract}
-\ABSTRACT
-\end{abstract}
 	 
 %| =================================================================================================
 %| Main Document body begins here!(the writin' parts)
