@@ -1,3 +1,116 @@
+%<<<<<<< HEAD
+%| report template for CSUS Senior Design
+%|
+%| language: LaTeX
+%| Author: Ben Smith
+%| 
+%| This source has been tagged with the "#CHANGE" tag in areas
+%| that require updating when making a new docuent
+%|
+%| This source will generate a PDF file complete with thumbnails navigation menu and metadata,
+%| 
+
+\documentclass[12pt,article]{IEEEtran}
+
+%| This section will essentially create variables to be used in some
+%| of the documents formatting and the PDF's metadata 
+%|s
+%| 
+\newcommand{\TITLE}{Assignment Title}
+\newcommand{\KEYWORDS}{keyword1, keyword2, keyword1, keyword2, keyword1, keyword2, keyword1, keyword2}
+\newcommand{\ABSTRACT}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, sapien vel gravida gravida, ligula magna ullamcorper orci, eu sodales nunc metus ac ante. Curabitur vel fermentum sem, sit amet congue velit.}
+\newcommand{\AUTHOR}{Micheal Frith, David Larribas, Devin Moore, Benjamin Smith}
+\newcommand{\DUEDATE}{September 10, 2013}
+%| =================================================================================================
+%| Formatting options
+%| =================================================================================================
+
+%| Enables PDF metadata, thumbnails, and navigation
+\newcommand\MYhyperrefoptions{
+	bookmarks=true,
+	bookmarksnumbered=true,
+	bookmarksopen=true,
+	bookmarkstype={toc},
+	pdfpagemode={UseOutlines},
+	plainpages=false,
+	pdfpagelabels=true,
+	colorlinks=true,
+	linkcolor={black},
+	citecolor={black},
+	pagecolor={black},
+	urlcolor={black},
+	final=true,
+	pdftex,
+	pdftitle={\TITLE},															%#CHANGE
+	pdfsubject={\ABSTRACT},													%#CHANGE
+	pdfauthor={Micheal Frith, David Larribas, Devin Moore, Benjamin Smith},					%#CHANGE
+	pdfkeywords={\KEYWORDS}}													%#CHANGE
+
+%| Calls hyper ref package 
+\usepackage[\MYhyperrefoptions]{hyperref}
+%| Override compsoc class' Palatino font for body text, restores to Times New Roman
+\renewcommand{\rmdefault}{ptm}\selectfont
+
+%| IEEE Citation package
+\usepackage{cite}
+
+%| American Mathematical Society package for fancy maths	
+\usepackage[cmex10]{amsmath}
+\interdisplaylinepenalty=2500				% Restores IEEE line spacing after amsmath
+
+%| Better tables than LaTeX 2e
+\usepackage{array}
+
+%| Improved URL handling
+\usepackage{url}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+%| Inserts header cover sheet 
+\include{./Title_Page}
+	 
+%| =================================================================================================
+%| Main Document body begins here!(the writin' parts)
+%| =================================================================================================
+\section{foobar}
+	\subsection{Group meeting minutes and synopsis of past week}
+	
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, sapien vel gravida gravida, ligula magna ullamcorper orci, eu sodales nunc metus ac ante. Curabitur vel fermentum sem, sit amet congue velit. Maecenas cursus vel orci nec varius. Fusce a aliquet eros. Nulla facilisi. Duis auctor, tellus a suscipit porta, sem turpis sagittis arcu, et dictum neque erat vitae justo. Nunc scelerisque vehicula ipsum, non condimentum nisi cursus et. Integer nulla neque, consectetur quis pellentesque eget, pulvinar id tellus. Donec fermentum turpis ut leo posuere, at dignissim mauris accumsan. Donec ut enim a nibh elementum varius. Curabitur tincidunt rutrum elit, et aliquam eros sagittis aliquet. In mattis, diam eu euismod vehicula, lorem augue congue quam, et fringilla lectus sem sed tellus.
+	
+	%| Summary of team activities
+	\begin{table}[ht]
+		\renewcommand{\arraystretch}{1.3}
+		\caption{Summary of team activities}
+		
+		\label{Summary of team activities}
+		
+		\centering
+		\begin{tabular}{p{5.5cm}|p{1cm}|p{1cm}}
+		\hline
+		\bfseries 	Task		 		& \bfseries Hours Worked	& \bfseries Status	\\
+		\hline
+		\hline
+					Michael Frith		& 2.0						& 20\%				\\	%| Percentage signs are escaped by a \ to indicate they are not a LaTeX command
+					David Larribas 		& 2.0						& 20\%				\\	
+					Devin Moore 		& 2.0						& 20\%				\\	
+					Benjamin Smith		& 2.0						& 9001\%			\\	
+		\hline
+		\end{tabular}
+		
+		\subsection{TOC TEST}
+		
+	\end{table}
+
+\section{foobar 2}
+\end{document}
+
+\end{document}
+=======
 \documentclass[12pt,journal,compsoc]{IEEEtran}
 
 \providecommand{\PSforPDF}[1]{#1}
@@ -430,3 +543,4 @@ Biography text here.
 \end{document}
 
 
+>>>>>>> refs/remotes/origin/ProblemStatement
