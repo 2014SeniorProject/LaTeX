@@ -1,4 +1,4 @@
-LaTeX
-=====
+#IEEE LaTeX Templates
+## edited for CSU Sacramento's Senior Design course
 
-Latex IEEE Class and Templates
+Templates for Senior Design and supporting Latex IEEE Class
