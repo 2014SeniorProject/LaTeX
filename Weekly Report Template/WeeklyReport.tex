@@ -1,0 +1,411 @@
+%| Weekly report template for CSUS Senior Design
+%|
+%| language: LaTeX
+%| Author: Ben Smith
+%| 
+%| This source has been tagged with the "<CHANGE" tag in areas
+%| that require updating when making a new docuent
+%|
+%| This source will generate a PDF file complete with thumbnails navigation menu and metadata.
+%| Much of the tex awesomeness comes from http://www.michaelshell.org/ praise be to him for creating the guide
+
+\documentclass[12pt,journal]{IEEEtran}
+
+%| Override compsoc class' Palatino font for body text, restores to Times New Roman
+\renewcommand{\rmdefault}{ptm}\selectfont
+
+%| IEEE Citation package
+ \usepackage{cite}
+
+%| American Mathematical Society package for fancy maths	
+\usepackage[cmex10]{amsmath}
+\interdisplaylinepenalty=2500				% Restores IEEE line spacing after amsmath
+
+%| Better tables than LaTeX 2e
+\usepackage{array}
+
+\usepackage{graphicx}
+
+\usepackage{float}
+\usepackage{url}
+
+%| Enables PDF metadata, thumbnails, and navigation
+\newcommand\MYhyperrefoptions{
+	bookmarks=true,
+	bookmarksnumbered=true,
+	pdfpagemode={UseOutlines},
+	plainpages=false,
+	pdfpagelabels=true,
+	colorlinks=true,
+	linkcolor={black},
+	citecolor={black},
+	urlcolor={black},
+	pdftitle={Senior Design: Weekly Progress Report},													%#CHANGE
+	pdfsubject={Senior Design},																								%#CHANGE
+	pdfauthor={Michael Frith, David Larribas, Devin Moore, Benjamin Smith},		%#CHANGE
+	pdfkeywords={Weekly Report}}																							%#CHANGE
+
+%| Calls hyper ref package 
+\usepackage[\MYhyperrefoptions,pdftex]{hyperref}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+%| =================================================================================================
+%| Title Block
+%| =================================================================================================
+\title{Senior Design: Week Seven Progress Report}
+\author{Team 3: Michael Frith, David Larribas, Devin Moore, Benjamin Smith}
+\date{\today}
+\maketitle
+
+%| =================================================================================================
+%| Weekly time report
+%| =================================================================================================
+\section{Group Time Synopsis}
+	\subsection{Team efforts and overall status}
+	{\bfseries Current Group Leader:} Ben Smith
+	\IEEEPARstart{L}{orem} ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+	euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+	nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis 
+	autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
+	eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+	zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option 
+	congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam.
+
+	%| What was done last week
+	%| =================================================================================================
+	\subsection{Tasks completed last week}
+		autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
+	eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+	zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option 
+	congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam.
+	\begin{itemize}
+		\item Lorem ipsum dolor sit amet
+		\item Lorem ipsum dolor sit amet
+		\item Lorem ipsum dolor sit amet
+		\item Lorem ipsum dolor sit amet
+		\item Lorem ipsum dolor sit amet
+		\item Lorem ipsum dolor sit amet
+		\item Lorem ipsum dolor sit amet
+		\item Lorem ipsum dolor sit amet
+	\end{itemize}
+
+	%| What is planned for next week
+	%| =================================================================================================
+	\subsection{Tasks scheduled for next week}
+	autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
+	eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+	zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option 
+	congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam.
+	\begin{itemize}
+		\item Motor control algorithm basic implementation
+		\item Voltage regulator prototype 
+		\item Verilog RPM calculating module
+		\item Basic Android application with Bluetooth connectivity
+	\end{itemize}
+
+	%| status of the overall project
+	%| =================================================================================================
+	\subsection{Overall project status}
+	autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
+	eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+	zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option 
+	congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam.
+	\begin{table}[H]
+		\renewcommand{\arraystretch}{1.3}
+		\caption{Project Status}
+		\label{Project Status}
+		\centering
+		\begin{tabular}{p{4cm}|p{2cm}}
+			\hline
+			{\bfseries 	Topic} 															&{\bfseries Completion}	\\
+			\hline\hline				
+						{autem vel eum iriure} 										& 80\% 									\\
+						{autem vel eum iriure} 										& 80\% 	 								\\
+						{autem vel eum iriure} 										& 70\% 	 								\\
+						{autem vel eum iriure} 										& 40\% 									\\
+						{autem vel eum iriure} 										& 50\% 									\\
+						{autem vel eum iriure} 										& 20\% 									\\
+						\hline \hline				
+						{\bfseries Laboratory prototype status} 	& 60\% 									\\
+						{\bfseries Overall status} 								& 40\% 									\\					
+			\hline
+		\end{tabular}
+	\end{table}
+
+	%| Weekly team meetings
+	%| =================================================================================================
+	\subsection{Weekly Team Meetings}
+		\begin{table}[H]
+			\renewcommand{\arraystretch}{1.3}
+			\caption{Weekly Team Meetings}
+			\label{Weekly Team Meetings}
+			\centering
+			\begin{tabular}{p{5cm}|p{1cm}}
+				\hline
+				{\bfseries 	Topic} 																						&{\bfseries Hours}		\\
+				\hline\hline
+							{\bfseries Monday:} Weekly Report and administravia			& 5 	 								\\
+				\hline
+			\end{tabular}
+		\end{table}
+				
+	\subsubsection{Weekly status meeting and Weekly Report draft}
+	autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
+	eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+	zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option 
+	congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam.
+		\subsection{Monday meeting adjenda}
+		\begin{itemize}
+			\item Lorem ipsum dolor sit amet
+			\item Lorem ipsum dolor sit amet
+			\item Lorem ipsum dolor sit amet
+			\item Lorem ipsum dolor sit amet
+		\end{itemize}
+
+	\subsubsection{Meeting attendance}
+		All group members were present for all functions.
+
+	%| Team hour summary
+	%| =================================================================================================
+	\begin{table}[H]
+		\renewcommand{\arraystretch}{1.3}
+		\caption{Team Hour Summary}
+		
+		\label{Team Hour Summary}
+		
+		\centering
+		\begin{tabular}{p{5cm}|p{1.5cm}}
+		\hline
+		{\bfseries 	Topic} 								&{\bfseries Hours}		\\
+		\hline\hline
+					{ Michael Frith}  					& 15.0								\\
+					{ David Larribas} 					& 15.0								\\
+					{ Devin Moore}							& 18.0								\\
+					{ Ben Smith}  							& 16.0								\\		
+					\hline
+					{\bfseries Total}  					& 64									\\	
+					\hline
+		\end{tabular}
+	\end{table}
+
+%| =================================================================================================
+%| Individual Activity Synopsis
+%| Mike
+%| =================================================================================================
+\section{Individual Activity Synopsis}
+	\subsection{Michael Frith}
+
+	\subsubsection*{Synopsis of past week's work}
+    Tipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+	euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+	nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis 
+	autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
+	eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+	zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option 
+	congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam.
+
+
+    \begin{table}[H]
+		\renewcommand{\arraystretch}{1.3}
+		\caption{Michael Frith: Tasks Assigned - Last Week}
+		
+		\label{Summary of Michael Frith's activities: last week}
+		
+		\centering
+		\begin{tabular}{p{5cm}|p{1cm}|p{1cm}}
+		\hline
+		\bfseries 	Task								& \bfseries Hours Worked	& \bfseries Status	\\
+		\hline\hline
+					      Task I 					 	            			& 2.0                   	& 100\%             \\
+                Task II 														& 5.0                   	& 100\%             \\
+                Task III														& 5.0                   	& 100\%             \\
+
+		\end{tabular}
+	\end{table}
+
+	\begin{table}[H]
+	\renewcommand{\arraystretch}{1.3}
+		\caption{Michael Frith: Tasks Assigned - This Week}
+		
+		\label{Summary of Michael Frith's activities: this week}
+		
+		\centering
+		\begin{tabular}{p{5cm}|p{1cm}|p{1cm}}
+		\hline
+		\bfseries 	Task		 														& \bfseries Hours Worked	& \bfseries Status	\\
+		\hline\hline
+					      Task I 					 	            			& 2.0                   	& 100\%             \\
+                Task II 														& 5.0                   	& 100\%             \\
+                Task III														& 5.0                   	& 100\%             \\
+		\hline
+		\end{tabular}
+	\end{table}
+
+%| =================================================================================================
+%| Individual Activity Synopsis
+%| David
+%| =================================================================================================
+\subsection{David Larribas}
+
+	\subsubsection*{Synopsis of past week's work}
+	ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+	euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+	nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis 
+	autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
+	eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+	zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option 
+	congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam.
+
+	\begin{table}[H]
+	\renewcommand{\arraystretch}{1.3}
+		\caption{David Larribas: Tasks Assigned - Last Week}
+		
+		\label{Summary of David Larribas' activities: last week}
+		
+		\centering
+		\begin{tabular}{p{5cm}|p{1cm}|p{1cm}}
+		\hline
+		\bfseries 	Task		 	              				& \bfseries Hours Worked	& \bfseries Status	\\
+		\hline\hline
+                Task I 					 	            			& 2.0                   	& 100\%             \\
+                Task II 														& 5.0                   	& 100\%             \\
+                Task III														& 5.0                   	& 100\%             \\
+		\hline
+		\end{tabular}
+	\end{table}
+
+	\begin{table}[H]
+	\renewcommand{\arraystretch}{1.3}
+		\caption{David Larribas: Tasks Assigned - Next Week}
+		
+		\label{Summary of David Larribas' activites: this week}
+		
+		\centering
+		\begin{tabular}{p{5cm}|p{1cm}|p{1cm}}
+		\hline
+		\bfseries 	Task		 	                         	 & \bfseries Hours Worked	& \bfseries Status	\\
+		\hline\hline
+					      Task I 					 	            			& 2.0                   	& 100\%             \\
+                Task II 														& 5.0                   	& 100\%             \\
+                Task III														& 5.0                   	& 100\%             \\
+                    \hline
+		\end{tabular}
+	\end{table}   
+
+%| =================================================================================================
+%| Individual Activity Synopsis
+%| Devin
+%| =================================================================================================
+\subsection{Devin Moore}
+
+	\subsubsection*{Synopsis of past week's work}
+	ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+	euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+	nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis 
+	autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
+	eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+	zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option 
+	congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam.
+
+	\begin{table}[H]
+	\renewcommand{\arraystretch}{1.3}
+		\caption{Devin Moore: Tasks Assigned - Last Week}
+		\label{Summary of Devin Moore's activities: last week}
+		\centering
+		\begin{tabular}{p{5cm}|p{1cm}|p{1cm}}
+
+		\hline
+		\bfseries 	Task		 		                    & \bfseries Hours Worked	& \bfseries Status	\\
+		\hline\hline
+					      Task I 					 	            			& 2.0                   	& 100\%             \\
+                Task II 														& 5.0                   	& 100\%             \\
+                Task III														& 5.0                   	& 100\%             \\
+
+		\hline
+		\end{tabular}
+	\end{table}
+
+	\begin{table}[H]
+	\renewcommand{\arraystretch}{1.3}
+		\caption{Devin Moore: Tasks Assigned - Next Week}
+		\label{Summary of Devin Moore's activites: this week}
+		\centering
+		\begin{tabular}{p{5cm}|p{1cm}|p{1cm}}
+
+		\hline
+		\bfseries 	Task		 		            	& \bfseries Hours Worked	& \bfseries Status	\\
+		\hline\hline
+                Task I 					 	            			& 2.0                   	& 100\%             \\
+                Task II 														& 5.0                   	& 100\%             \\
+                Task III														& 5.0                   	& 100\%             \\
+                    \hline
+		\end{tabular}
+	\end{table}
+
+%| =================================================================================================
+%| Individual Activity Synopsis
+%| Ben
+%| =================================================================================================
+\subsection{Ben Smith}
+	\subsection*{Synopsis of past week's work}
+	\subsubsection{Topic I}
+	ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+	euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+	nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis 
+	autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
+	eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+	zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option 
+	congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam.
+	\begin{figure}[H]
+		\includegraphics[width=.48\textwidth]{cool-story-bro.jpg}
+		\caption{Example figure}
+	\end{figure}
+	ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+	euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+	nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis 
+	autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
+	eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+	zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option 
+	congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam.
+
+	\begin{table}[H]
+	\renewcommand{\arraystretch}{1.3}
+		\caption{Ben Smith: Tasks Assigned - Last Week}
+		
+		\label{Summary of Ben Smith's activities: last week}
+		
+		\centering
+		\begin{tabular}{p{5cm}|p{1cm}|p{1cm}}
+
+		\hline
+		\bfseries 	Tasks					        							& \bfseries Hours Worked	& \bfseries Status	\\
+		\hline\hline
+                Task I 					 	            			& 2.0                   	& 100\%             \\
+                Task II 														& 5.0                   	& 100\%             \\
+                Task III														& 5.0                   	& 100\%             \\
+		\hline
+		\end{tabular}
+	\end{table}
+
+	\begin{table}[H]
+	\renewcommand{\arraystretch}{1.3}
+		\caption{Ben Smith: Tasks Assigned - Next Week}
+		
+		\label{Summary of Ben Smith's activites: this week}
+		
+		\centering
+		\begin{tabular}{p{5cm}|p{1cm}|p{1cm}}
+
+		\hline
+		\bfseries 	Task	 		           	 					& \bfseries Hours Worked	& \bfseries Status			\\
+		\hline\hline
+                Task I 					 	            			& 2.0                   	& 100\%             \\
+                Task II 														& 5.0                   	& 100\%             \\
+                Task III														& 5.0                   	& 100\%             \\
+		\hline
+		\end{tabular}
+	\end{table}
+\end{document}
